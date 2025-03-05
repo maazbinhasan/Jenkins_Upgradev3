@@ -22,11 +22,15 @@ public class TestGreeter {
 
   @Test
   public void greetShouldIncludeTheOneBeingGreeted() {
+    assertTrue(false);
+  }
+
+   @Test
+  public void Intentiallyfailed() {
     String someone = "World";
 
     assertThat(greeter.greet(someone), containsString(someone));
   }
-  
 
   @Test
   public void greetShouldIncludeGreetingPhrase() {
